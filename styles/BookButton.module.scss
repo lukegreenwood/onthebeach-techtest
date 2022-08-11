@@ -1,0 +1,24 @@
+.bookButton {
+	display: inline-block;
+	width: 100%;
+	padding: 12px;
+	margin: 0;
+	border: 0;
+	border-radius: 4px;
+	font-weight: bold;
+	background-color: #fedc07;
+	color: #17317f;
+
+	span {
+		display: block;
+	}
+
+	.label {
+		font-size: 14px;
+		margin-bottom: 2px;
+	}
+
+	.price {
+		font-size: 28px;
+	}
+}

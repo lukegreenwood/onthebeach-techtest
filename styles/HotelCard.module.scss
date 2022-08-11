@@ -1,0 +1,36 @@
+.hotelCard {
+	display: flex;
+	margin-bottom: 32px;
+	background-color: #ffffff;
+
+	.hotelInfo {
+		padding: 32px;
+		flex-grow: 1;
+
+		.hotelName {
+			margin: 0;
+			font-size: 20px;
+			color: #17317f;
+		}
+
+		.hotelLocation {
+			margin-top: 4px;
+			font-size: 16px;
+			color: #868686;
+		}
+	}
+
+	.stayInfo {
+		margin-bottom: 12px;
+		color: #333333;
+
+		p {
+			margin: 0 0 4px;
+			font-size: 14px;
+		}
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
