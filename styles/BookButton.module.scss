@@ -1,3 +1,5 @@
+@import "variables";
+
 .bookButton {
 	display: inline-block;
 	width: 100%;
@@ -6,8 +8,8 @@
 	border: 0;
 	border-radius: 4px;
 	font-weight: bold;
-	background-color: #fedc07;
-	color: #17317f;
+	background-color: $yellow;
+	color: $blue;
 
 	span {
 		display: block;

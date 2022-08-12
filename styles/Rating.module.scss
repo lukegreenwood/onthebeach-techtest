@@ -1,9 +1,11 @@
+@import "variables";
+
 .rating {
 	display: flex;
 	margin: 8px 0 12px -4px;
 
 	svg {
-		fill: #fedc07;
+		fill: $yellow;
 		width: 24px;
 		height: 24px;
 	}

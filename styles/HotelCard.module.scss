@@ -1,16 +1,50 @@
+@import "variables";
+
 .hotelCard {
-	display: flex;
+	display: grid;
+	grid-template-columns: 494px auto;
+	grid-template-areas:
+		"image info"
+		"description description ";
 	margin-bottom: 32px;
 	background-color: #ffffff;
 
+	.hotelImage {
+		grid-area: image;
+		position: relative;
+
+		img {
+			display: block;
+		}
+
+		.descriptionToggle {
+			display: inline-flex;
+			align-items: center;
+			position: absolute;
+			bottom: 0;
+			padding: 8px 16px;
+			background: none;
+			background-color: #ffffff;
+			border: none;
+			font-size: 14px;
+			color: $blue;
+			gap: 4px;
+
+			svg {
+				fill: currentColor;
+			}
+		}
+	}
+
 	.hotelInfo {
-		padding: 32px;
+		grid-area: info;
+		padding: 16px 20px;
 		flex-grow: 1;
 
 		.hotelName {
 			margin: 0;
 			font-size: 20px;
-			color: #17317f;
+			color: $blue;
 		}
 
 		.hotelLocation {
@@ -27,6 +61,24 @@
 		p {
 			margin: 0 0 4px;
 			font-size: 14px;
+		}
+	}
+
+	.description {
+		grid-area: description;
+		padding: 24px 16px;
+		border-bottom: 1px solid #afafaf;
+		font-size: 14px;
+
+		h3 {
+			color: $blue;
+
+			margin: 0 0 8px;
+		}
+
+		p {
+			line-height: 1.5;
+			color: #343434;
 		}
 	}
 
