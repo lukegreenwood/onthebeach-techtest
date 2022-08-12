@@ -14,8 +14,8 @@ export const HotelList = () => {
 				<SortControls hotels={hotels} setHotels={setHotels} />
 			</aside>
 			<main>
-				{hotels.map((hotel, index) => (
-					<HotelCard key={index} {...hotel} />
+				{hotels.map((hotel) => (
+					<HotelCard key={hotel.name} {...hotel} />
 				))}
 			</main>
 		</div>
