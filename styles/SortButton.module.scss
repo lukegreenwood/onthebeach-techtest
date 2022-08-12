@@ -1,0 +1,30 @@
+@import "variables";
+
+.sortButton {
+	display: flex;
+	justify-content: space-between;
+	background: none;
+	background-color: #ffffff;
+	color: $blue;
+	font-size: 18px;
+	border: 0;
+	width: 100%;
+	padding: 16px;
+	border-bottom: 2px solid #8c99c0;
+
+	svg {
+		width: 24px;
+		height: 24px;
+		fill: #d4d4d4;
+	}
+
+	&.selected {
+		background-color: $blue;
+		color: #ffffff;
+		border-color: $blue;
+
+		svg {
+			fill: currentColor;
+		}
+	}
+}
