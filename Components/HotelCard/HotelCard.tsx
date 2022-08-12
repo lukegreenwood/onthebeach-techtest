@@ -13,14 +13,9 @@ export const HotelCard = (props: Hotel) => {
 	const guests = formatGuests(props.guests);
 
 	return (
-		<div className={styles.hotelCard}>
+		<article className={styles.hotelCard}>
 			<div className={styles.hotelImage}>
-				<img
-					src={`/${props.image}`}
-					alt={`Image of hotel ${props.name}`}
-					width={494}
-					height={277}
-				/>
+				<img src={`/${props.image}`} alt="" width={494} height={277} />
 				<button
 					className={styles.descriptionToggle}
 					onClick={() => setShowingDescription(!showingDescription)}
@@ -83,6 +78,6 @@ export const HotelCard = (props: Hotel) => {
 					<p>{props.description}</p>
 				</div>
 			)}
-		</div>
+		</article>
 	);
 };

@@ -7,10 +7,10 @@ export const Rating = (props: { stars: number }) => {
 	const stars = new Array(props.stars).fill("");
 
 	return (
-		<div
-			className={styles.rating}
-			aria-label={`Hotel rating ${props.stars} out of 5 stars`}
-		>
+		<div className={styles.rating}>
+			<span className="visually-hidden">
+				Hotel rating {props.stars} out of 5 stars
+			</span>
 			{stars.map((_) => (
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
