@@ -21,16 +21,18 @@ Things we like:
 - Error/warning free JavaScript
 - Clean flow of state throughout the application
 
-![](design.png)
-
 ## Getting Started
+
+Install dependancies
+
+```bash
+yarn install
+```
 
 Run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in the browser to see the app.
