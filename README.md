@@ -35,4 +35,11 @@ Run the development server:
 yarn dev
 ```
 
+Run the production build:
+
+```bash
+yarn build
+yarn start
+```
+
 Open [http://localhost:3000](http://localhost:3000) in the browser to see the app.
